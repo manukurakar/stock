@@ -1,0 +1,26 @@
+<html>
+<head></head>
+<title>Title Page</title>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        Select Stock
+        <select name="stock">
+          <option value="GOOG">GOOG</option>
+          <option value="AAPL">AAPL</option>
+          <option value="MSTF">MSTF</option>
+          <option value="BBBY">BBBY</option>
+          <option value="HSEB">HSEB</option>
+          <option value="DTLK">DTLK</option>
+          <option value="AMZN">AMZN</option>
+          <option value="LOGI">LOGI</option>
+          <option value="DAKT">DAKT</option>
+          <option value="SWI">SWI</option>
+        </select>
+        <br>
+        From Date<input type="date" name="frm_date"><br>
+        To Date<input type="date" name="to_date"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
